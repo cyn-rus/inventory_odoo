@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_list_material" model="ir.actions.act_window">
+        <field name="name">Daftar Bahan Baku</field>
+        <field name="res_model">inventory.material</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_list_product" model="ir.actions.act_window">
+        <field name="name">Daftar Produk</field> 
+        <field name="res_model">inventory.product</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="inventory_root_menu"
+        name="Inventarisasi"
+        sequence="1"
+    />
+
+    <menuitem
+        id="inventory_material_menu"
+        name="Daftar Bahan Baku"
+        parent="inventory_root_menu"
+        action="action_list_material"
+        sequence="1"
+    />
+
+    <menuitem
+        id="inventory_product_menu"
+        name="Daftar Produk"
+        parent="inventory_root_menu"
+        action="action_list_product"
+        sequence="2"
+    />
+</odoo>

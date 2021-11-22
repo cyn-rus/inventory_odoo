@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="inventory_material_form">
+        <field name="name">inventory.material.form</field>
+        <field name="model">inventory.material</field>
+        <field name="priority" eval="1" />
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="description" />
+                        <field name="stock" />
+                        <field name="type" />
+                        <field name="source" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model='ir.ui.view' id="inventory_material_type_form">
+        <field name="name">inventory.material.type.form</field>
+        <field name="model">inventory.material.type</field>
+        <field name="priority" eval="1" />
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="inventory_product_form">
+        <field name="name">inventory.product.form</field>
+        <field name="model">inventory.product</field>
+        <field name="priority" eval="1" />
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="stock" />
+                        <field name="description" />
+                        <field name="type" />
+                        <field name="price" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

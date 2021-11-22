@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+inventory_material_manager,Inventory Material Manager,model_inventory_material,,1,1,1,1
+inventory_product_manager,Inventory Product Manager,model_inventory_product,,1,1,1,1
+inventory_material_type_manager,Inventory Material Type Manager,model_inventory_material_type,,1,1,1,1

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="inventory_material_tree">
+        <field name="name">inventory.material.tree</field>
+        <field name="model">inventory.material</field>
+        <field name="priority" eval="1" />
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id" />
+                <field name="name" />
+                <field name="stock" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="inventory_product_tree">
+        <field name="name">inventory.product.tree</field>
+        <field name="model">inventory.product</field>
+        <field name="priority" eval="1" />
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id" />
+                <field name="name" />
+                <field name="stock" />
+            </tree>
+        </field>
+    </record>
+</odoo>
